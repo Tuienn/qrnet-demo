@@ -1,0 +1,39 @@
+@import "../../../utils/mixin.scss";
+@import "../../../utils/variable.scss";
+
+section.cta {
+    overflow: hidden;
+    margin-top: $padding-big;
+
+    background: linear-gradient(
+        268.76deg,
+        $primary-color 7.36%,
+        $primary-color-gradient 94.43%
+    );
+    h2 {
+        color: $white-color-header;
+        @include set-font-sz-lh-fw-sm-title();
+        @include center-text();
+    }
+    p {
+        color: $white-color-header;
+        @include set-font-sz-lh-bg-para();
+        @include center-text();
+    }
+    .cta__img {
+        margin-top: 30px;
+        overflow: hidden;
+        @include set-position(relative, $bottom: 0, $right: 0, $left: 0);
+        & > img {
+            width: 720px;
+        }
+        .cta-img__content {
+            @include set-position(absolute, $bottom: 15px, $left: 50%);
+            transform: translateX(-50%);
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import "../../../utils/variable.scss";
+@import "../../../utils//mixin.scss";
+
+.introduce {
+    background: radial-gradient(
+        62.13% 62.4% at 50% 39.03%,
+        #fbeafd 0%,
+        #f2f7fd 60.94%,
+        rgba(231, 239, 250, 0) 100%
+    );
+    width: 100%;
+    margin-top: $header-height;
+
+    .wrapper-introduce {
+        .content-introduce {
+            h1 {
+                @include set-font-sz-lh-fw-big-title();
+                text-align: center;
+            }
+
+            p {
+                @include set-font-sz-lh-bg-para();
+                text-align: center;
+            }
+
+            button {
+                span.ant-btn-icon {
+                    font-size: 25px;
+                }
+            }
+            .wrapper-video {
+                width: 600px;
+                height: 335px;
+                overflow: visible;
+                position: relative;
+                iframe {
+                    @include set-position(absolute, 50%, 50%, 50%, 50%);
+                    transform: translate(-50%, -50%);
+                    // z-index: 1;
+
+                    width: 100%;
+                    height: 100%;
+                    border-radius: $border-radius-bg;
+                    box-shadow: -16px 16px rgba(23, 126, 229, 0.3);
+                }
+            }
+
+            @media (max-width: 767px) {
+                .wrapper-video {
+                    width: 80vw;
+                    height: 40vw;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import "../../../utils/mixin.scss";
+@import "../../../utils//variable.scss";
+
+.ant-form {
+    box-sizing: content-box;
+    @include set-wh(100%, auto);
+    h2 {
+        @include set-font-sz-lh-fw-md-title();
+        margin-bottom: 20px;
+    }
+    .group-input {
+        @include set-wh(100%, 100%);
+        .ant-form-item.form-field {
+            position: relative;
+            @include set-wh(100%, 100%);
+
+            &.active:has(.ant-form-item-label)
+                .ant-form-item-row
+                .ant-form-item-label {
+                top: 0;
+                transform: translateY(0);
+                font-size: 8px;
+            }
+            span.ant-select-arrow {
+                top: 25px;
+            }
+
+            input,
+            .ant-select-selector {
+                font-size: 13px;
+                padding-top: 16px;
+                @include set-wh(100%, 50px);
+                border: 2px solid transparent;
+
+                &:focus {
+                    outline: none;
+                    border: 2px solid $primary-color;
+                }
+            }
+            .ant-form-item-explain-error {
+                font-size: 12px;
+            }
+            .ant-form-item-label {
+                position: absolute;
+                top: 25px;
+                left: 11px;
+                transform: translateY(-50%);
+                font-size: 14px;
+                font-weight: 600;
+                transition: ease 0.1s;
+                .ant-form-item-required {
+                    flex-direction: row-reverse;
+
+                    &::before {
+                        margin-left: 4px;
+                    }
+                    &::after {
+                        width: 0;
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+    .wrapper-form--success {
+        .wrapper-img {
+            overflow: hidden;
+        }
+        h2 {
+            @include set-font-sz-lh-fw-sm-title();
+            text-align: center;
+        }
+        p {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .ant-form {
+        h2 {
+            @include set-font-sz-lh-fw-sm-title();
+        }
+    }
+}

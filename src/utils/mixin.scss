@@ -1,0 +1,180 @@
+@import "./variable.scss";
+
+@mixin reset-mp {
+    margin: 0;
+    padding: 0;
+}
+@mixin set-flex($justify: flex-start, $align: stretch, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin set-grid($columns: 1, $gap: 0) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+@mixin set-wh($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}
+@mixin set-bg($color: #fff) {
+    background-color: $color;
+}
+@mixin set-position(
+    $position: static,
+    $top: auto,
+    $right: auto,
+    $bottom: auto,
+    $left: auto
+) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin center-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin center-text($line-height: auto) {
+    text-align: center;
+    line-height: $line-height;
+}
+@mixin set-font-sz-lh-fw-big-title() {
+    font-size: $font-title-bg;
+    line-height: $line-height-title-bg;
+    font-weight: $font-weight-title;
+}
+@mixin set-font-sz-lh-fw-md-title() {
+    font-size: $font-title-md;
+    line-height: $line-height-title-md;
+    font-weight: $font-weight-title;
+}
+@mixin set-font-sz-lh-fw-sm-title() {
+    font-size: $font-title-sm;
+    line-height: $line-height-title-sm;
+    font-weight: $font-weight-title;
+}
+@mixin set-font-sz-lh-fw-vsm-title() {
+    font-size: $font-title-vsm;
+    line-height: $line-height-title-vsm;
+    font-weight: $font-weight-title;
+}
+@mixin set-font-sz-lh-bg-para() {
+    font-size: $para-font-size;
+    line-height: $para-line-height;
+    font-weight: $para-font-weight;
+}
+@mixin set-font-sz-lh-sm-para() {
+    font-size: $para-font-size-sm;
+    line-height: $para-line-weight-sm;
+    font-weight: $para-font-weight;
+}
+
+@mixin set-mw-mg-xxl() {
+    max-width: $max-width-xxl;
+    margin: auto;
+}
+@mixin set-pd-introduce-xxl() {
+    padding: $padding-xxl $padding-xxl 0 $padding-xxl;
+}
+@mixin set-pd-footer-xxl() {
+    padding: $padding-xxl 60px;
+}
+@mixin set-w-header-xxl() {
+    width: $max-width-xxl;
+}
+@mixin set-pd-header-xxl() {
+    padding: 0 $padding-xxl;
+}
+
+@mixin set-pd-xxl() {
+    padding: 0 $padding-xxl;
+}
+@mixin set-mw-mg-xl() {
+    max-width: $max-width-xxl;
+    margin: auto;
+}
+@mixin set-w-header-xl() {
+    width: 100%;
+}
+@mixin set-pd-header-xl() {
+    padding: 0 $padding-xl;
+}
+@mixin set-pd-introduce-xl() {
+    padding: $padding-xxl $padding-xl 0 $padding-xl;
+}
+@mixin set-pd-footer-xl() {
+    padding: 60px $padding-xl;
+}
+@mixin set-pd-xl() {
+    padding: 0 $padding-xl;
+}
+
+@mixin set-mw-mg-lg() {
+    max-width: $max-width-lg;
+    margin: auto;
+}
+@mixin set-w-header-lg() {
+    width: 100%;
+}
+@mixin set-pd-header-lg() {
+    padding: 0 $padding-lg;
+}
+@mixin set-pd-introduce-lg() {
+    padding: $padding-xxl $padding-lg 0 $padding-lg;
+}
+@mixin set-pd-footer-lg() {
+    padding: 0;
+}
+@mixin set-pd-lg() {
+    padding: 0 $padding-lg;
+}
+
+@mixin set-mw-mg-md() {
+    max-width: $max-width-md;
+    margin: auto;
+}
+@mixin set-w-header-md() {
+    width: $max-width-md;
+}
+
+@mixin set-pd-introduce-md() {
+    padding: $padding-xl $padding-md 0 $padding-md;
+}
+@mixin set-pd-cta-md() {
+    padding: $padding-big $padding-big 0 $padding-big;
+}
+@mixin set-pd-footer-md() {
+    padding: 60px $padding-sm;
+}
+@mixin set-pd-md() {
+    padding: 0 $padding-md;
+}
+
+@mixin set-mw-mg-sm() {
+    width: 100%;
+    margin: auto;
+}
+@mixin set-pd-introduce-sm() {
+    padding: $padding-xl $padding-sm 0 $padding-sm;
+}
+@mixin set-pd-cta-sm() {
+    padding: $padding-sm $padding-sm 0 $padding-sm;
+}
+@mixin set-pd-footer-sm() {
+    padding: 60px $padding-sm;
+}
+@mixin set-pd-sm() {
+    padding: 0 $padding-sm;
+}

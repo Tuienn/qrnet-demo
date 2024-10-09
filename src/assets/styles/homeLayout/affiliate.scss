@@ -1,0 +1,25 @@
+@import "../../../utils/variable.scss";
+@import "../../../utils//mixin.scss";
+
+.affiliate {
+    .wrapper-affiliate {
+        .content-affiliate {
+            h2 {
+                @include set-font-sz-lh-fw-md-title();
+                @include center-text();
+            }
+            .wrapper-logo {
+                margin-top: 25px;
+                overflow: hidden;
+                .wrapper-img {
+                    @include center-flex();
+
+                    img {
+                        height: 60px;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "../../../utils//mixin.scss";
+@import "../../../utils//variable.scss";
+footer {
+    .wrapper-footer {
+        @include set-mw-mg-xxl();
+        .content-footer {
+            color: $white-color-header;
+            .footer__introduce {
+                ul {
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .footer__item-title {
+                color: gray;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            ul {
+                li {
+                    @include set-font-sz-lh-sm-para();
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                    a {
+                        color: $white-color-header;
+                    }
+                }
+            }
+        }
+    }
+}
