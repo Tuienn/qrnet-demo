@@ -29,7 +29,7 @@ const Introduce: React.FC = () => {
 
     return (
         <section className="introduce">
-            <div className="wrapper-introduce">
+            <div className="wrapper-introduce container">
                 <div className="content-introduce">
                     <Flex vertical align="center" gap={15}>
                         <h1>{title}</h1>

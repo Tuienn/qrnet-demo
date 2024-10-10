@@ -1,4 +1,4 @@
-import { Col, Row, Image, Flex, Button, Modal } from "antd";
+import { Col, Row, Image, Flex, Button } from "antd";
 
 import { InfoContentElementProps } from "../../redux/types";
 import Icon from "../../assets/svg/commonIcon";

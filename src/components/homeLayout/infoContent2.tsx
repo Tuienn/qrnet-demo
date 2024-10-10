@@ -15,11 +15,11 @@ const InfoContent2: React.FC<InfoContentElementProps> = ({ mainContent }) => {
                     <p>{name}</p>
                 </div>
                 <h2>{title}</h2>
-                <Row>
+                <Row gutter={[20, 20]}>
                     {des.map((item: string[], index: number) => {
                         return (
                             <Col key={index} lg={8} sm={24} xs={24}>
-                                <div style={{ padding: "10px" }}>
+                                <div>
                                     <Flex vertical gap={15}>
                                         <Image preview={false} src={item[0]} />
                                         <h2>{item[1]}</h2>

@@ -1,4 +1,4 @@
-import { Col, Row, Grid } from "antd";
+import { Col, Row } from "antd";
 import { useSelector } from "react-redux";
 
 import type { RootReducer } from "../../redux/types";
@@ -26,7 +26,7 @@ const ListInfoContent: React.FC = () => {
 
     return (
         <section className="list-info">
-            <div className="wrapper-list-info">
+            <div className="wrapper-list-info container">
                 <Row gutter={[0, 40]} className="content-list-info">
                     <Col span={24}>
                         <InfoContent1

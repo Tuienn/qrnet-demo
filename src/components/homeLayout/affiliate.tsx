@@ -13,7 +13,7 @@ const Affiliate: React.FC = () => {
 
     return (
         <section className="affiliate">
-            <div className="wrapper-affiliate">
+            <div className="wrapper-affiliate container">
                 <div className="content-affiliate">
                     <h2>{title}</h2>
                     <div className="wrapper-logo">

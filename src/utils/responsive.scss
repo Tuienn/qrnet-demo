@@ -81,9 +81,12 @@
         }
     }
     main {
+        .container {
+            @include set-mw-mg-sm();
+            @include set-pd-sm();
+        }
         section.introduce {
             .wrapper-introduce {
-                @include set-mw-mg-sm();
                 @include set-pd-introduce-sm();
                 .content-introduce {
                     h1 {
@@ -97,8 +100,6 @@
         }
         section.affiliate {
             .wrapper-affiliate {
-                @include set-mw-mg-sm();
-                @include set-pd-sm();
                 .content-affiliate {
                     h2 {
                         @include set-font-sz-lh-fw-vsm-title();
@@ -109,8 +110,6 @@
 
         section.list-info {
             .wrapper-list-info {
-                @include set-mw-mg-sm();
-                @include set-pd-sm();
                 .content-list-info {
                     h2 {
                         @include set-font-sz-lh-fw-vsm-title();
@@ -155,9 +154,12 @@
         }
     }
     main {
+        .container {
+            @include set-mw-mg-md();
+            @include set-pd-md();
+        }
         section.introduce {
             .wrapper-introduce {
-                @include set-mw-mg-md();
                 @include set-pd-introduce-md();
                 .content-introduce {
                     h1 {
@@ -171,8 +173,6 @@
         }
         section.affiliate {
             .wrapper-affiliate {
-                @include set-mw-mg-md();
-                @include set-pd-md();
                 .content-affiliate {
                     h2 {
                         @include set-font-sz-lh-fw-sm-title();
@@ -183,8 +183,6 @@
 
         section.list-info {
             .wrapper-list-info {
-                @include set-mw-mg-md();
-                @include set-pd-md();
                 .content-list-info {
                     h2 {
                         @include set-font-sz-lh-fw-sm-title();
@@ -225,24 +223,18 @@
     }
 
     main {
+        .container {
+            @include set-mw-mg-lg();
+            @include set-pd-lg();
+        }
         section.introduce {
             .wrapper-introduce {
-                @include set-mw-mg-lg();
                 @include set-pd-introduce-lg();
-            }
-        }
-        section.affiliate {
-            .wrapper-affiliate {
-                @include set-mw-mg-lg();
-                @include set-pd-lg();
             }
         }
 
         section.list-info {
             .wrapper-list-info {
-                @include set-mw-mg-lg();
-                @include set-pd-lg();
-
                 .content-list-info {
                     .type-3,
                     .type-4 {
@@ -271,23 +263,18 @@
         }
     }
     main {
+        .container {
+            @include set-mw-mg-xl();
+            @include set-pd-xl();
+        }
         section.introduce {
             .wrapper-introduce {
-                @include set-mw-mg-xl();
                 @include set-pd-introduce-xl();
-            }
-        }
-        section.affiliate {
-            .wrapper-affiliate {
-                @include set-mw-mg-xl();
-                @include set-pd-xl();
             }
         }
 
         section.list-info {
             .wrapper-list-info {
-                @include set-mw-mg-xl();
-                @include set-pd-xl();
                 .content-list-info {
                     .order {
                         .ant-col:first-child {
@@ -324,24 +311,18 @@
         }
     }
     main {
+        .container {
+            @include set-mw-mg-xxl();
+            @include set-pd-xxl();
+        }
         section.introduce {
             .wrapper-introduce {
-                @include set-mw-mg-xxl();
                 @include set-pd-introduce-xxl();
-            }
-        }
-        section.affiliate {
-            .wrapper-affiliate {
-                @include set-mw-mg-xxl();
-                @include set-pd-xxl();
             }
         }
 
         section.list-info {
             .wrapper-list-info {
-                @include set-mw-mg-xxl();
-                @include set-pd-xxl();
-
                 .content-list-info {
                     .order {
                         .ant-col:first-child {

@@ -28,7 +28,6 @@ function NavHidden({ listItem }: { listItem: string[] }) {
 const HeaderCustom: React.FC = () => {
     const { lg, xs, sm } = useBreakpoint();
     const [open, setOpen] = useState(false);
-
     const navbarContent = useSelector(
         (state: RootReducer) => state.dataReducer.navbarContent
     );
